@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pritam Giri — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  
+</head>
+
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- TOAST NOTIFICATION -->
+<div class="toast" id="toast" role="alert" aria-live="polite">
+  <div class="toast-icon">✉️</div>
+  <div class="toast-body">
+    <div class="toast-title">Message Received! 🎉</div>
+    <div class="toast-msg">
+      Thanks for reaching out! I'll <span>get back to you shortly</span> — usually within 24 hours. Stay awesome! 🚀
+    </div>
+  </div>
+  <button class="toast-close" onclick="hideToast()" aria-label="Close">✕</button>
+  <div class="toast-progress"><div class="toast-progress-fill" id="toastProgress"></div></div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">Pritam Giri</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag"><span class="dot"></span> Open to Opportunities</div>
+    <p class="hero-greeting">Hello, I am</p>
+    <h1 class="hero-name">
+      <span class="first">Pritam</span>
+      <span class="last">Giri</span>
+    </h1>
+    <div class="hero-divider">
+      <div class="hero-divider-line"></div>
+      <span class="hero-divider-text">Computer Science & Engineering</span>
+    </div>
+    <p class="hero-sub">
+      <strong>Diploma Student · CSE</strong><br/>
+      Passionate about building things with code, solving real problems, and turning ideas into elegant digital experiences.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View My Work ↗</a>
+      <a href="#contact" class="btn btn-outline">Let's Connect</a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="avatar-wrap reveal-left">
+      <div class="avatar-ring"></div>
+      <div class="about-avatar">
+        <div class="avatar-corner corner-tl"></div>
+        <div class="avatar-corner corner-br"></div>
+        <div class="avatar-initials">PG</div>
+      </div>
+    </div>
+    <div class="about-text reveal-right">
+      <p class="section-label">About Me</p>
+      <h2>Curious Mind,<br/>Creative Coder.</h2>
+      <p>
+        I'm currently pursuing a <strong>Diploma in Computer Science &amp; Engineering</strong>, building a strong foundation in programming, algorithms, databases, and networking.
+      </p>
+      <p>
+        I love exploring new technologies and working on projects that challenge me to grow. When I'm not coding, I enjoy learning about how technology shapes the world around us.
+      </p>
+      <div class="about-badges">
+        <span class="badge">🎓 CSE Diploma Student</span>
+        <span class="badge">💻 Aspiring Developer</span>
+        <span class="badge">🚀 Tech Enthusiast</span>
+        <span class="badge">🧩 Problem Solver</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label reveal">What I Know</p>
+  <h2 class="reveal">My Skills</h2>
+  <p class="section-desc reveal">Technologies and tools I've been learning during my diploma program.</p>
+  <div class="skills-grid stagger">
+    <div class="skill-card">
+      <div class="skill-icon" style="background:rgba(255,200,80,0.1);">🐍</div>
+      <h3>Python</h3>
+      <p>Scripts, problem solving, and exploring data with Python's powerful libraries.</p>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>Proficiency</span><span>70%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="70%"></div></div>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon" style="background:rgba(80,160,255,0.1);">🌐</div>
+      <h3>HTML & CSS</h3>
+      <p>Building and styling web pages with semantic HTML and modern CSS techniques.</p>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>Proficiency</span><span>75%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="75%"></div></div>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon" style="background:rgba(255,150,80,0.1);"><span style="font-weight:bold;">JS</span></div>
+      <h3>JavaScript</h3>
+      <p>JavaScript Writing efficient, structured code with a deep understanding of underlying web mechanics.</p>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>Proficiency</span><span>60%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="60%"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon" style="background:rgba(162,155,254,0.1);">🐙</div>
+      <h3>Git & GitHub</h3>
+      <p>Version control, collaboration, and managing code repositories effectively.</p>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>Proficiency</span><span>55%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="55%"></div></div>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon" style="background:rgba(253,121,168,0.1);">🔧</div>
+      <h3>Linux & OS Concepts</h3>
+      <p>Working with the Linux terminal, OS fundamentals and system commands.</p>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>Proficiency</span><span>50%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="50%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label reveal">What I've Built</p>
+  <h2 class="reveal">Projects</h2>
+  <p class="section-desc reveal">A few things I've worked on — always building and learning.</p>
+  <div class="projects-grid stagger">
+    <div class="project-card">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0f0e25,#6c5ce722);">🖩</div>
+      <div class="project-body">
+        <h3>Smart Calculator App</h3>
+        <p>A feature-rich calculator supporting basic, scientific, and programmer modes with history tracking and an interactive UI.</p>
+        <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      
+ 
+
+
+
+      </div> <div class="btn-wrap">
+       <a href="https://calculator-gules-six-15.vercel.app/" target="_blank" rel="noopener noreferrer" class="liquid-btn">
+    View 
+  </a></div>
+    </div>
+    <div class="project-card">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0e1f15,#00cec922);">🌐</div>
+      <div class="project-body">
+        <h3>Personal Portfolio Website</h3>
+        <p>This very portfolio — designed and built with HTML, CSS, and JavaScript to showcase my work and skills.</p>
+        <p></p>
+        <p></p>
+        <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      </div><div class="btn-wrap">
+  <a href="https://your-link.com" target="_blank" rel="noopener noreferrer" class="liquid-btn">
+    View 
+  </a>
+</div>
+    </div>
+    <div class="project-card">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#1f0e17,#fd79a822);"><span>🌤️</span></div>
+      <div class="project-body">
+        <h3>Simple Weather Web</h3>
+        <p> A simple Weather Web Displays current weather conditions with a simple and clean interface.</p>
+
+        <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      </div>
+       <div class="btn-wrap">
+  <a href="https://simple-weather-web-iota.vercel.app/" target="_blank" rel="noopener noreferrer" class="liquid-btn">View</a>
+</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label reveal">Let's Connect</p>
+  <h2 class="reveal">Get In Touch</h2>
+  <p class="section-desc reveal">Whether you want to collaborate, have a question, or just say hi — I'd love to hear from you.</p>
+  <div class="contact-grid">
+    <form class="contact-form reveal-left" id="contactForm">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="John Doe" required />
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="john@example.com" required />
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" placeholder="Say something nice... 😊" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" id="submitBtn">Send Message ✉️</button>
+    </form>
+    <div class="contact-info stagger">
+      <a class="contact-item" href="https://mail.google.com/mail/?view=cm&to=pritamgirics@gmail.com" target="_blank" rel="noopener">
+        <div class="contact-icon">📧</div>
+        <div><span>Email</span><strong>pritamgirics@gmail.com</strong></div>
+      </a>
+      <a class="contact-item" href="https://github.com/pritam-giri" target="_blank" rel="noopener">
+        <div class="contact-icon">🐙</div>
+        <div><span>GitHub</span><strong>github.com/pritam-giri</strong></div>
+      </a>
+      <a class="contact-item" href="https://linkedin.com/in/pritam-giri" target="_blank" rel="noopener">
+        <div class="contact-icon">💼</div>
+        <div><span>LinkedIn</span><strong>linkedin.com/in/pritam-giri</strong></div>
+      </a>
+      <a class="contact-item" href="https://www.google.com/maps/place/Kanpur,+Uttar+Pradesh" target="_blank" rel="noopener">
+        <div class="contact-icon">📍</div>
+        <div><span>Location</span><strong>Kanpur, Uttar Pradesh, India 🇮🇳</strong></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Crafted with ♥ by <span class="footer-name">Pritam Giri</span> &nbsp;·&nbsp; Diploma in Computer Science &amp; Engineering &nbsp;·&nbsp; 2025</p>
+</footer>
+
+<head> <link rel="stylesheet" href="style.css"></head>
+<script src="script.js"></script>
+</body>
+</html>
